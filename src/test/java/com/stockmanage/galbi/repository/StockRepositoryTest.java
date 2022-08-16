@@ -4,10 +4,12 @@ import com.stockmanage.galbi.entity.Stock;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.context.TestPropertySource;
 
 import javax.annotation.PostConstruct;
 import java.util.List;
 
+@TestPropertySource()
 @SpringBootTest
 class StockRepositoryTest {
 
