@@ -10,7 +10,7 @@ import javax.persistence.*;
 @Setter
 @AllArgsConstructor
 @Builder
-@Table(name="tbl_stock_hist")
+@Table(name="tbl_stock_hist", schema = "galbi")
 @ToString(callSuper = true)
 @EqualsAndHashCode(callSuper = true)
 public class StockHist extends BaseEntity{

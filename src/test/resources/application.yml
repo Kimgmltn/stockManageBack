@@ -1,6 +1,6 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/hs
+    url: jdbc:postgresql://localhost:5432/postgres
     driver-class-name: org.postgresql.Driver
     username: postgres
     password: gmltn0323@
@@ -27,3 +27,6 @@ user:
 
 super:
   phoneNumber: 010-2706-8717
+
+server:
+  port: 8000

@@ -27,9 +27,9 @@ public class StockManageRestController {
         return ResponseEntity.ok(providerService.findAll());
     }
 
-    @PostMapping("/{stockName}")
+    @PostMapping("/stock")
     @CrossOrigin(origins = {"*"}, allowedHeaders = {"*"})
-    public ResponseEntity saveStock(@PathVariable String stockName){
+    public ResponseEntity saveStock(@RequestBody String stockName){
         return ResponseEntity.ok(providerService.saveStockByStockName(stockName));
     }
 }
